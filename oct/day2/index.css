@@ -1,0 +1,132 @@
+ /* descendant */
+ #parent p
+{
+    color: rgb(13, 78, 175);
+}
+    /* direct child */
+    #parent>p
+    {
+        color: rgb(255, 0, 0);
+    }
+    
+    /* adjacent sibling */
+    #parent+p
+    {
+        color: rgb(0, 255, 0);
+    }
+    
+    /* general sibling */
+    #parent~p
+    {
+        color: rgb(255, 165, 0);
+    }
+    /* Attribute selector */
+    h1[id="heading"]
+    {
+        color: rgb(128, 0, 128);
+    }
+    
+    /* pesudo class selector */
+    /*
+    hover
+    active
+    visited
+    focus
+    nth-child
+    first-child
+    last-child 
+     */
+     #box
+     {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+     }
+        #box:hover
+        {
+            background-color: yellow;
+        }
+        #box:active
+        {
+            background-color: red;
+        }
+        #box:focus
+        {
+            background-color: blue;
+        }
+        input:focus
+        {
+            background-color: rgb(3, 88, 33);
+        }
+        a:visited
+        {
+            color: rgb(203, 5, 38);
+        }
+        
+        ul li:nth-child(n+1)
+        {
+            background-color: rgb(255, 0, 255);
+        }
+        ul li:first-child
+        {
+            background-color: rgb(0, 255, 255);
+        }
+        ul li:last-child
+        {
+            background-color: rgb(255, 192, 203);
+        }
+        
+
+    /* psudo element selector */
+    /*
+    after
+    before
+    first line 
+    first letter
+    selected 
+     */
+     h2::after
+     {
+        content: "MY HEADING 2";
+        color: red;
+     }
+        h2::before
+        {
+            content: "HELLO ";
+            color: blue;
+        }
+        #box::first-line
+        {
+            color: green;
+            font-size: 20px;
+        }
+        #box::selection
+        {
+            background-color: rgb(119, 8, 78);
+        }
+        /* color
+        1.(red,green,blue)
+        2.rgba(red,green,blue,alpha)
+        3.hexadecimal (#ff0000)
+         */
+         h2
+            {
+                color: rgb(255, 0, 255);
+            }
+            h3
+            {
+                color: rgba(55, 200, 200, 1);
+            }
+            h4
+            {
+                color: #ff00ff;
+            }
+            .boxmodel
+            {
+                width: 200px;
+                height: 200px;
+                border: 5px solid black;
+                padding: 20px;
+                margin: 20px;
+                background-color: rgb(255, 192, 203);
+            }
