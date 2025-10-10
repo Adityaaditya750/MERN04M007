@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #box
+{
+    width: 500px;
+    height: 500px;
+    border: 2px solid rgb(113, 115, 245);
+    color: red;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+}
+ #box h1{
+    font-size: 200px;
+    background-image: url("https://images.pexels.com/photos/459203/pexels-photo-459203.jpeg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-clip: text;
+    text-shadow: 8px 8px 34px rgb(180, 180, 245);
+} */
+/* position
+ 1. relative
+ 2. absolute
+ 3. fixed
+ 4. sticky
+ 5. static 
+  */
+.container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    float: left;
+
+}
+
+.container:nth-child(1) {
+    background-color: red;
+    position: absolute;
+}
+
+.container:nth-child(2) {
+    background-color: rgb(168, 244, 4);
+}
+
+.container:nth-child(3) {
+    background-color: green;
+}
