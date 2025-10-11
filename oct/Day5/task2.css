@@ -50,7 +50,7 @@ body {
 /* .galery_content .galery_image:nth-child(3), */
 /* .galery_content .galery_image:nth-child(5), */
 .galery_content .galery_image:nth-child(6),
-.galery_content .galery_image:nth-child(15){
+.galery_content .galery_image:nth-child(14){
   grid-column: span 2;
   grid-row: span 2;
 }
