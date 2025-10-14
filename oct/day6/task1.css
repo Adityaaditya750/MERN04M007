@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e9ebee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  height: 500px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+
+.site-nav{
+  position: absolute;
+  top: 18px;
+  left: 24px;
+  right: 24px;
+  z-index: 30;
+  pointer-events: auto;
+}
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  font-weight:700;
+  color:#2a2a8f;
+  letter-spacing:1px;
+}
+.nav-links{
+  display:flex;
+  gap:24px;
+  align-items:center;
+}
+.nav-links a{
+  color:#2b2b2b;
+  text-decoration:none;
+  font-size:14px;
+}
+.nav-cta .signup{
+  background:#fff;
+  border:1px solid #e6e6e6;
+  padding:8px 14px;
+  border-radius:8px;
+}
+
+.left {
+  background: #f5e7de;
+  width: 60%;
+  padding: 80px 60px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+}
+
+.left h1 {
+  font-size: 38px;
+  color: #1a1a2e;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.search-box button {
+  background: #ff5c5c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #ff4040;
+}
+
+.right {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50%;
+  height: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 5;
+}
+
+
+.right {
+  right: -60px; 
+}
+.house {
+  width: 62%;
+  height: 68%;
+  object-fit: cover;
+}
