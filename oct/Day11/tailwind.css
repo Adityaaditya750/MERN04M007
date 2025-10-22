@@ -1,0 +1,40 @@
+/* *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* nav{
+    width: 100vw;
+    height: 60px;
+    box-shadow: 2px 2px 5px gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+    margin-left: 60px;
+}
+.logo p{
+    font-size: 1.2em;
+    color: lightseagreen;
+}
+.logo span{
+    font-weight: bold;
+    color: teal;
+}
+.list{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(106, 251, 106); */
+/* }
+.list ul
+{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    
+} */ 
