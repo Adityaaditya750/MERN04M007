@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominos Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header -->
+   <header class="bg-white shadow-md p-3 flex justify-between items-center sticky top-0 z-50 border-b border-gray-100">
+        <div class="flex items-center space-x-3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/1024px-Domino%27s_pizza_logo.svg.png" 
+                 alt="Domino's" 
+                 class="w-8 h-8 object-contain">
+            
+            <div>
+                <span class="text-dominos-dark font-extrabold block text-sm">BHUBANESWAR</span>
+                <span class="text-xs text-gray-500">Odisha | 45 min</span>
+            </div>
+        </div>
+        <button class="w-10 h-10 bg-gray-100 text-dominos-red rounded-full flex items-center justify-center font-bold text-xl hover:bg-gray-200 transition">
+            👤
+        </button>
+    </header>
+
+  <!-- Location Bar -->
+  <div class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <span>Give us your exact location for seamless delivery</span>
+    <button class="bg-white text-blue-600 px-4 py-2 rounded">Detect Location</button>
+  </div>
+
+  <!-- Delivery Buttons -->
+  <div class="bg-white flex justify-around p-4 shadow">
+    <button class="bg-gray-900 text-white px-4 py-2 rounded">Delivery<br>30 Mins</button>
+    <button class="text-gray-600">Takeaway<br>Select Store</button>
+    <button class="text-gray-600">Dine-in<br>Select Store</button>
+  </div>
+<!-- Category Section -->
+<section class="p-4">
+  <h2 class="text-xl font-semibold mb-4">What are you craving for?</h2>
+
+  <!-- CAROUSEL WRAPPER -->
+  <div class="overflow-x-auto whitespace-nowrap space-x-6 pb-3">
+
+    <!-- 1 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/78ac6411-a99b-415f-a047-824a579d0177_CheeseLavaPullApart1.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Cheese Lava</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/2544336f-11ad-445d-b7a9-1522d0c4c689_BigBigPizza_Normal.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Big Big Pizza</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/e396c20d-5eb1-42a3-8abf-98cac7d51d84_LoadedSaucyRange.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Crazy Deals</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/34bc1050-b755-4d78-bde8-b3c52280794f_LunchFeastCoke.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">5 Course Lunch Feast</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/b0ea1c18-eb4d-4246-93b2-f2723205a0eb_VegPizza.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Veg Pizza</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/dd2e3ddb-3ba2-4bbd-8463-239a0e354df1_PizzaManianew.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Pizza Mania</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/8f40712d-0364-42bf-8edd-bdd5d177a3a2_garlicbread.jpg?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Garlic Breads & Dips</p>
+    </div>
+   
+   <!-- 8 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/b8a5f7ad-d22a-49b1-936d-f8252a559be8_noonionnogarlic.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">No Onion No Garlic </p>
+    </div>
+
+
+
+    <!-- 9 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/1f4457f4-6c15-433b-817a-ac400ef72835_cheeseburst.jpg?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Cheese Burst Pizza</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/de9b4339-d70a-4b55-b5a0-80b3790a6dbe_ValueCombosNew.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Value Combo</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/7638be6f-fb68-47cc-b003-474daa7f3406_cheesevolcano.jpg?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Cheese Volcano</p>
+    </div>
+
+    <!-- 12 -->
+    <div class="inline-block text-center w-24">
+      <div class="w-20 h-20 rounded-full mx-auto overflow-hidden">
+        <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/CategoriesV1/c5cb1709-fb96-4233-982a-7fa73d327f75_CokeBeverage.png?ver=V0.0.1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-sm">Beverages</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- What's New -->
+ 
+    <section class="pl-4 py-4 bg-dominos-bg">
+        <h2 class="text-xl font-extrabold mb-3 text-dominos-dark">What's New</h2>
+        <div class="flex overflow-x-auto space-x-4 pb-4 no-scrollbar pr-4">
+            
+            <div class="flex-shrink-0 w-80 h-36 bg-dominos-red rounded-xl shadow-lg relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&h=300&q=80" 
+                     alt="New Volcano" 
+                     class="w-full h-full object-cover opacity-100">
+                <div class="absolute inset-0 p-4 flex flex-col justify-end text-white">
+                    <span class="text-xl font-black">VOLCANO PIZZA IS HERE!</span>
+                    <span class="text-sm font-medium">Molten cheese core, guaranteed.</span>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 w-80 h-36 bg-dominos-blue rounded-xl shadow-lg relative overflow-hidden">
+                 <img src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg" 
+                     alt="2 for 1 Offer" 
+                     class="w-full h-full object-cover opacity-100">
+                <div class="absolute inset-0 p-4 flex flex-col justify-end text-white">
+                    <span class="text-xl font-black">BUY 1 GET 1 FREE!</span>
+                    <span class="text-sm font-medium">Limited time weekend offer.</span>
+                </div>
+            </div>
+            
+            <div class="flex-shrink-0 w-80 h-36 bg-green-600 rounded-xl shadow-lg relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&h=300&q=80" 
+                     alt="Lunch Feast" 
+                     class="w-full h-full object-cover opacity-100">
+                <div class="absolute inset-0 p-4 flex flex-col justify-end text-white">
+                    <span class="text-xl font-black">LUNCH FEAST @ ₹149</span>
+                    <span class="text-sm font-medium">Available Mon-Fri, 11 AM - 3 PM.</span>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 w-80 h-36 bg-purple-600 rounded-xl shadow-lg relative overflow-hidden">
+                <img src="https://images.pexels.com/photos/6368747/pexels-photo-6368747.jpeg" 
+                     alt="Chicken Wings" 
+                     class="w-full h-full object-cover opacity-100">
+                <div class="absolute inset-0 p-4 flex flex-col justify-end text-white">
+                    <span class="text-xl font-black">HOT & SPICY WINGS!</span>
+                    <span class="text-sm font-medium">New side item, try it today.</span>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 w-80 h-36 bg-yellow-500 rounded-xl shadow-lg relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&h=300&q=80" 
+                     class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 p-4 flex flex-col justify-end text-dominos-dark">
+                    <span class="text-xl font-black">SWEET DEAL @ ₹99</span>
+                    <span class="text-sm font-medium">Chocolate Lava Cake & more.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Top 10 Bestsellers Section -->
+<div class="text-center py-8 bg-gradient-to-b from-[#fdeecf] to-[#f9e3b6]">
+  <h2 class="text-3xl font-bold text-gray-700 flex justify-center items-center gap-2">
+    <span class="text-yellow-500 text-4xl">👑</span>
+    Top 10 <span class="text-yellow-700 ml-1">Bestsellers</span>
+  </h2>
+
+  <p class="flex justify-center items-center gap-1 mt-2 text-gray-600">
+    📍 In Bhubaneswar
+  </p>
+</div>
+
+<!-- CAROUSEL SCROLLER -->
+<div class="flex gap-4 overflow-x-auto snap-x snap-mandatory px-4 pb-6">
+
+  <!-- CARD 1 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/05e8ba85-4444-4c19-b085-8012f1baf0b4_margherita_side.webp?ver=V0.0.1"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold">Margherita</h3>
+          <p class="text-xs text-gray-200">Classic delight with 100% real mozzarella cheese.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹109</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 2 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a52b70f2-01cb-42b8-ae4f-566df999115c_farmhouse_side.webp?ver=V0.0.1"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold">Farmhouse</h3>
+          <p class="text-xs text-gray-200">Onion, capsicum, tomato & grilled mushroom.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹265</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/ff2e39b8-87cc-4f3f-a2f5-06198a85f3df_peppy_paneer_side.webp?ver=V0.0.1"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold">Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Juicy paneer with capsicum & spicy paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CARD 4 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/8abd61ff-024b-45fe-a221-6b72d601cb49_indi_paneer_side_full.webp?ver=V0.0.1"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold">Indi Tandoori Paneer</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum, red paprika & mint mayo.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹325</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- CARD 5 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=150&q=80" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Pepper BBQ Chicken</h3>
+          <p class="text-xs text-gray-200">Pepper barbecue chicken for smoky flavor.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- CARD 6 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/d7530589-1336-442b-aa6e-598680086abb_extravaganza_side_full.webp?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Veg Extravaganza</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum & spicy red paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹325</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- CARD 7 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/8dc29663-b661-4ad9-8c50-b5bba12f57c3_PMCapsicumPaneerHome.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Paneer & Capsicum with Videshi Hot Sauce</h3>
+          <p class="text-xs text-gray-200">Internationally inspired Hot sauce to cater your spice cravings loaded with juicy Paneer and crisp CApsicum.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹115</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- CARD 8 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/28012ab8-104b-4a76-b13b-b1d98c5805af_PMOnionCapsicumPaneerHome.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Paneer,Onion & Capsicum with Desi Makhani Sauce</h3>
+          <p class="text-xs text-gray-200">Authentic Indan falvor of Makhani Sauce loaded with juicy Paneer,crisp Capsium and crunchy Onion.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹135</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- CARD 9 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a1b4e8c0-3cb5-44f2-b6e3-68ad58ce6ff2_zingy_parcel_v_side.webp?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Veg Parcel</h3>
+          <p class="text-xs text-gray-200">Snacky bites!Pizza rolls with paneer & creamy hasissa sauce.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹49</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+   <!-- CARD 10 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/1f840b33-7507-497d-bffb-80f1ca296260_PMClassicHome.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Classic</h3>
+          <p class="text-xs text-gray-200">A classic pizza topped with sprinkle of basil and parsley herbs.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹49</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- You can continue adding cards (Card 5, 6, 7, 8, 9, 10...) 
+       Just follow the same structure and size -->
+</div>
+
+<!-- Cheese Volcano Section -->
+<div class="text-center py-8 bg-gradient-to-b from-[#fdeecf] to-[#f9e3b6]">
+  <h2 class="text-3xl font-bold text-gray-700 flex justify-center items-center gap-2">
+    <span class="text-yellow-500 text-4xl">👑</span>
+    Top 10 <span class="text-yellow-700 ml-1">Cheese Volcano</span>
+  </h2>
+
+  <p class="flex justify-center items-center gap-1 mt-2 text-gray-600">
+    📍 In Bhubaneswar
+  </p>
+</div>
+
+<!-- ⭐ HORIZONTAL SCROLLER -->
+<div class="flex gap-4 overflow-x-auto snap-x snap-mandatory px-4 pb-6">
+
+  <!-- CARD 1 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/ace91efd-72bb-4e1f-ad3f-5d08cc168545_FullSizeCornCheese.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Corn & Cheese Valcano</h3>
+          <p class="text-xs text-gray-200">centre loaded with molten cheese & topped with juicy Golden corn *Contains non-edible container under the Pizza.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹319</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/2ae1ff09-d233-4aeb-a17a-9335c9318b52_FullSizeCheeseVolcanoBlazingChicken.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Cheese Volcano Blazing Chicken</h3>
+          <p class="text-xs text-gray-200">Centre loaded with molten cheese & topped with chicken keema & red paprika with our spicy peri peri sauce.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹265</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/ff749958-795a-4c15-8cd4-3dd885cb2ef2_FullSizeVeggieParadise.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Cheese Volcano Veg Paradise</h3>
+          <p class="text-xs text-gray-200">centre loaded with molten cheese & toped with Golden corn,Black Olives,Capsicum & Red Paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise>></button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/dbebea5e-4c08-4de4-9f80-5aaa4f75cae4_FullSizeCheeseVolcanoBBQChicken.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Cheese Volcano BBQ Chicken</h3>
+          <p class="text-xs text-gray-200">centre loaded with molten cheese & topped with pepper BBQ Chicken.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹369</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- CARD 5 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/91d8018d-f353-4358-9226-a31f55d5b8b2_FullSizeFarmhouse.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Cheese Volcano Farmhouse</h3>
+          <p class="text-xs text-gray-200">centre loaded with molten cheese & topped with onion,capsium,tomato & grilled mushroom.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3 bg-slate-900/10 p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹319</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 6 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/00ae34b9-dbf6-4788-bb79-b42513d5b474_volcanoHomePeppyPaneer.jpg?ver=V0.0.1" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Cheese Volcano Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Centre loaded with molten cheese & topped with peppy paneer,capsicum & red paneer,</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹109</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 1 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924582971-6f7d3b1b89c1?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Margherita</h3>
+          <p class="text-xs text-gray-200">Classic delight with 100% real mozzarella cheese.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹109</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ⭐ Continue adding your remaining cards here using SAME structure -->
+</div>
+<!-- TOP 10 HEADER -->
+<div class="text-center py-8 bg-gradient-to-b from-[#fdeecf] to-[#f9e3b6]">
+  <h2 class="text-3xl font-bold text-gray-700 flex justify-center items-center gap-2">
+    <span class="text-yellow-500 text-4xl">👑</span>
+    <span class="text-yellow-700 ml-1">Lunch Feast @ 149</span>
+  </h2>
+
+  <p class="flex justify-center items-center gap-1 mt-2 text-gray-600">
+    📍 In Bhubaneswar
+  </p>
+</div>
+
+<!-- ⭐ CAROUSEL (ALL CARDS FIXED INSIDE THIS WRAPPER) -->
+<div class="flex gap-4 overflow-x-auto snap-x snap-mandatory px-4 pb-6">
+
+  <!-- CARD 1 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924582971-6f7d3b1b89c1?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Margherita</h3>
+          <p class="text-xs text-gray-200">Classic delight with 100% real mozzarella cheese.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹109</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1585238342029-2b439c125c19?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Farmhouse</h3>
+          <p class="text-xs text-gray-200">Onion, capsicum, tomato & grilled mushroom.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹265</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c0b3a66?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum & spicy paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924578876-4d3b4b7f1f12?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Indi Tandoori Paneer</h3>
+          <p class="text-xs text-gray-200">Tandoori paneer, capsicum & mint mayo.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3 p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹325</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c0b3a66?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum & spicy red paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3 p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c0b3a66?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum & spicy red paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c0b3a66?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum & spicy red paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c0b3a66?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum & spicy red paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c0b3a66?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum & spicy red paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ⭐ Continue adding all other cards exactly like this -->
+  <!-- Just paste them inside this same wrapper -->
+
+</div>
+<!-- 🍞 Garlic Breads & Dips Section -->
+<div class="text-center py-8 bg-gradient-to-b from-[#fdeecf] to-[#f9e3b6]">
+  <h2 class="text-3xl font-bold text-gray-700 flex justify-center items-center gap-2">
+    <span class="text-yellow-500 text-4xl">👑</span>
+    <span class="text-yellow-700 ml-1">Garlic Breads & Dips</span>
+  </h2>
+  <p class="flex justify-center items-center gap-1 mt-2 text-gray-600">
+    📍 In Bhubaneswar
+  </p>
+</div>
+
+
+<!-- ⭐ CAROUSEL (ALL CARDS FIXED INSIDE THIS WRAPPER) -->
+<div class="flex gap-4 overflow-x-auto snap-x snap-mandatory px-4 pb-6">
+
+  <!-- CARD 1 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924582971-6f7d3b1b89c1?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Margherita</h3>
+          <p class="text-xs text-gray-200">Classic delight with 100% real mozzarella cheese.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹109</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1585238342029-2b439c125c19?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Farmhouse</h3>
+          <p class="text-xs text-gray-200">Onion, capsicum, tomato & grilled mushroom.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹265</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1555992336-03a23c0b3a66?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Peppy Paneer</h3>
+          <p class="text-xs text-gray-200">Paneer, capsicum & spicy paprika.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹275</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924578876-4d3b4b7f1f12?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Indi Tandoori Paneer</h3>
+          <p class="text-xs text-gray-200">Tandoori paneer, capsicum & mint mayo.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹325</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 1 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924582971-6f7d3b1b89c1?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Margherita</h3>
+          <p class="text-xs text-gray-200">Classic delight with 100% real mozzarella cheese.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹109</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 1 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924582971-6f7d3b1b89c1?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Margherita</h3>
+          <p class="text-xs text-gray-200">Classic delight with 100% real mozzarella cheese.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹109</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- CARD 1 -->
+  <div class="relative min-w-[260px] max-w-[260px] aspect-[260/350] snap-center rounded-xl overflow-hidden shadow-xl bg-white">
+    <img src="https://images.unsplash.com/photo-1601924582971-6f7d3b1b89c1?q=80&w=900&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent"></div>
+
+    <div class="absolute top-3 right-3">
+      <div class="bg-yellow-400 text-black font-bold px-3 py-1 rounded-md shadow">TOP 10</div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+      <div class="flex justify-between items-start">
+        <div>
+          <h3 class="text-lg font-bold leading-tight">Margherita</h3>
+          <p class="text-xs text-gray-200">Classic delight with 100% real mozzarella cheese.</p>
+        </div>
+        <button class="bg-white text-gray-900 px-3 py-1 rounded-full text-xs font-semibold">Customise</button>
+      </div>
+
+      <div class="mt-3  p-3 rounded flex items-center justify-between">
+        <div class="text-lg font-bold">₹109</div>
+        <button class="bg-red-600 text-white px-4 py-1 rounded-md font-semibold">Add +</button>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+<!-- Bottom Bar -->
+   <!-- Footer -->
+  <footer class="w-full fixed bottom-0 bg-white shadow-[0_-1px_8px_rgba(0,0,0,0.2)]">
+    <div class="max-w-screen-xl mx-auto flex justify-center gap-20 py--2">
+
+      <!-- Menu -->
+      <div class="flex flex-col items-center text-gray-700">
+        <span class="text-2xl">≡</span>
+        <span class="text-sm mt-1">Menu</span>
+      </div>
+
+      <!-- Offers -->
+      <div class="flex flex-col items-center text-gray-700">
+        <span class="text-2xl">🎟</span>
+        <span class="text-sm mt-1">Offers</span>
+      </div>
+
+    </div>
+  </footer>
+</body>
+</html>

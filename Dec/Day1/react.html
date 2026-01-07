@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominos Clone Dynamic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- HEADER (KEEP YOUR EXISTING HEADER HERE) -->
+   <header class="bg-white shadow-md p-3 flex justify-between items-center sticky top-0 z-50 border-b border-gray-100">
+        <div class="flex items-center space-x-3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/1024px-Domino%27s_pizza_logo.svg.png" 
+                 alt="Domino's" 
+                 class="w-8 h-8 object-contain">
+            
+            <div>
+                <span class="text-dominos-dark font-extrabold block text-sm">BHUBANESWAR</span>
+                <span class="text-xs text-gray-500">Odisha | 45 min</span>
+            </div>
+        </div>
+        <button class="w-10 h-10 bg-gray-100 text-dominos-red rounded-full flex items-center justify-center font-bold text-xl hover:bg-gray-200 transition">
+            👤
+        </button>
+    </header>
+     <!-- Location Bar -->
+  <div class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <span>Give us your exact location for seamless delivery</span>
+    <button class="bg-white text-blue-600 px-4 py-2 rounded">Detect Location</button>
+  </div>
+
+  <!-- Delivery Buttons -->
+  <div class="bg-white flex justify-around p-4 shadow">
+    <button class="bg-gray-900 text-white px-4 py-2 rounded">Delivery<br>30 Mins</button>
+    <button class="text-gray-600">Takeaway<br>Select Store</button>
+    <button class="text-gray-600">Dine-in<br>Select Store</button>
+  </div>
+
+  
+
+
+
+  <!-- Category Section -->
+  <section class="p-4">
+    <h2 class="text-xl font-semibold mb-4">What are you craving for?</h2>
+    <div id="category-container" class="overflow-x-auto whitespace-nowrap space-x-6 pb-3"></div>
+  </section>
+
+  <!-- What's New -->
+  <section class="pl-4 py-4 bg-dominos-bg">
+    <h2 class="text-xl font-extrabold mb-3 text-dominos-dark">What's New</h2>
+    <div id="whatsnew-container" class="flex overflow-x-auto space-x-4 pb-4 no-scrollbar pr-4"></div>
+  </section>
+
+  <!-- Top 10 Bestsellers -->
+  <<section class="bg-gradient-to-b from-[#fff8e9] to-white py-6 px-4">
+  <h2 class="text-center text-2xl font-extrabold text-gray-900">
+    <span class="text-yellow-600 text-3xl">👑</span>
+    Top 10 Bestsellers
+  </h2>
+  <p class="text-center text-gray-600 mt-1">📍 In Your Locality</p>
+
+  <div id="bestseller-container"
+       class="flex overflow-x-auto space-x-6 pb-4 mt-6 no-scrollbar">
+  </div>
+</section>
+
+
+
+  <!-- Chicken Feast -->
+  <section class="p-6 bg-white text-center mt-10">
+    <h2 class="text-2xl font-bold text-orange-600 flex justify-center items-center gap-2">🍗 Chicken Feast</h2>
+    <p class="text-gray-600 mt-1">Irresistibly Flavourful Chicken Delicacies!</p>
+    <div id="chicken-container" class="mt-6 overflow-x-auto whitespace-nowrap space-x-4 pb-4"></div>
+  </section>
+
+  <script src="react.js"></script>
+</body>
+</html>
